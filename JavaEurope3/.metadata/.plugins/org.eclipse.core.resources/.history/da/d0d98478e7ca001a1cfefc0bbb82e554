@@ -1,0 +1,29 @@
+package day30_wrapperClass;
+
+public class Task98 {
+
+	public static void main(String[] args) {
+
+
+		String str1 = "&^%^1&8O^^..ne. .52||{{T.*@,(wo#$ %^*f!@%^<<i86876ve&%^$ ^%$S$..,,!i!%*&#x&*@!$";
+		
+		String str2 = "N000000i%$!,n!!!!<e>>>>> 43.***T#$#%hr##<e><e>><{{ ###f##00o00###u%$#$##$#r";
+
+
+		number(str1, str2);
+	}
+	
+	public static void number(String s1, String s2) {
+		
+		String ss1="";
+		String ss2="";
+		
+		for(int i=0; i<s1.length(); i++) {
+			if(Character.isAlphabetic(s1.charAt(i)) || Character.isSpaceChar(s1.charAt(i))) {
+				ss1 = ss1 + s1.charAt(i);
+			}
+		}
+		System.out.println(ss1);
+	}
+
+}

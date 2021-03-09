@@ -1,0 +1,17 @@
+package day36_StaticClassMember;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		
+		Student s1 = new Student("Mike", 30, 1000);
+		Student s2 = new Student("Ozzy", 20, 2000);
+		Student s3 = new Student("Jamal", 10, 3000);
+		
+		System.out.println(s1.school);
+
+		
+		
+	}
+
+}

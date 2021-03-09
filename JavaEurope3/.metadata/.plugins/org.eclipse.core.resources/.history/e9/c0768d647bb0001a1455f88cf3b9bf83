@@ -1,0 +1,29 @@
+package day14_methods_Part2;
+
+
+
+public class Task69_PrimeNumber {
+
+	public static void main(String[] args) {
+    
+      boolean prime = false;
+      for(int num=0;num<=100;num++) {
+    	  
+  		if(num>10) {
+  			if(num==0 && num==1 && num%3==0||(num!=5&&num%5==0)||(num!=2 && num%2==0) ) {
+  			
+  			prime = false;
+  			System.out.print(num+" ");
+  		}else  {
+  			
+  			prime=true;
+  			System.err.print(num+" ");
+  		}
+  		
+  		}
+
+	}
+
+
+
+}

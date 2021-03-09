@@ -1,0 +1,31 @@
+package day30_wrapperClass;
+
+public class Task97 {
+
+	public static void main(String[] args) {
+		
+		String s= "(((W&e**_lco73me %t%o co!@$,,<r>e <J>>>$@av```~a777.||}{";
+		
+		System.out.println(filterString(s));  
+
+	}
+	
+	public static String filterString(String s) {
+		
+		String[] s1 = s.split(" "); 
+		String s2 = "";
+		for(int i=0; i<s1.length; i++) {
+			for(int j=0; j<s1[i].length(); j++) {
+				if(Character.isAlphabetic(s1[i].charAt(j)) && j<s1[i].length()-1) {
+					s2 = s2 + (s1[i].charAt(j));
+				}else {
+					s2 = s2 + (s1[i].charAt(j))+" ";
+				}
+			}
+			
+			
+		}
+		return s2;
+	}
+
+}

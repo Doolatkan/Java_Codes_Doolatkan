@@ -1,0 +1,27 @@
+package day36_StaticClassMember;
+
+public class Student {
+	
+	String name;
+	int age;
+	int idNumber;
+	String school="Cybertek";
+	
+	public Student(String name, int age, int idNumber) {
+		
+		this.name = name;
+		this.age = age;
+		this.idNumber = idNumber;
+		this.school = school;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", idNumber=" + idNumber + ", school=" + school + "]";
+	}
+	
+	
+	
+	
+
+}

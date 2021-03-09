@@ -1,0 +1,17 @@
+package day30_wrapperClass;
+
+public class Task96 {
+
+	public static void main(String[] args) {
+
+
+		String str1 = "Today weather is sunny and 72 degree. It is a perfect day to practice java.";
+		
+		String str2 = str1.substring(str1.indexOf("72"),str1.indexOf("72")+2);
+		int degree = Integer.parseInt(str2);
+		double celcius = Math.round((degree/3.24)*100)/100;
+		System.out.println(degree + " degree is equal to " + celcius + " celcius");
+
+	}
+
+}

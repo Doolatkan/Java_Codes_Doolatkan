@@ -1,0 +1,55 @@
+package day28_arrays_part4_lab4;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Question12 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter size of array1:");
+		int size1 = scan.nextInt();
+		while(size1<1) {
+			System.out.print("Array size cannot be 0 or negative. Try it again:");
+			size1 = scan.nextInt();
+		}
+		
+		int[] array1 = new int[size1];
+		for(int i=0; i<array1.length; i++) {
+			System.out.print("Enter " + (i+1) + "-element of array1:");
+			array1[i]=scan.nextInt();
+		}
+		
+		System.out.print("Enter size of array2:");
+		int size2 = scan.nextInt();
+		while(size2<1) {
+			System.out.print("Array size cannot be 0 or negative. Try it again:");
+			size2 = scan.nextInt();
+		}
+		
+		int[] array2 = new int[size2];
+		for(int i=0; i<array2.length; i++) {
+			System.out.print("Enter " + (i+1) + "-element of array2:");
+			array2[i]=scan.nextInt();
+		}		
+		
+		System.out.println("Input array1:" + Arrays.toString(array1));
+		System.out.println("Input array2:" + Arrays.toString(array2));
+		System.out.println("Ouput:" + haveFirstElement1(array1, array2));
+		
+	}
+	
+	public static int haveFirstElement1(int[] arr1, int[] arr2) {
+		
+		int count = 0;
+		if(arr1[0]==1) {
+			count++;
+		}
+		if(arr2[0]==1) {
+			count++;
+		}
+		return count;		
+	}
+
+}
